@@ -1,38 +1,216 @@
 .App {
   text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(79deg, #4700c2, #dc2dc7 48%, #F7944D);
+}
+.search {
+  /* margin-top: -500px; */
+  text-align: center;
+  color: white;
+  padding: 20px; /* Add some padding to the container */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search input[type="text"] {
+  width: 100%; /* Make the input take up the full width */
+  padding: 10px; /* Increase padding for better readability and larger appearance */
+  font-size: 18px; /* Increase font size */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.search button {
+  padding: 10px 20px; /* Increase padding for a larger button */
+  font-size: 18px; /* Increase font size */
+}
+
+
+
+.auth-form-container{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px black;
+}
+.login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  background-color: rgb(109, 109, 165);
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: none;
+}
+.job-card {
+  display: flex;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.job-card img {
+  max-width: 100px;
+  margin-right: 16px;
+  border-radius: 4px;
+}
+
+.job-details {
+  flex-grow: 1;
+}
+
+.job-details h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.job-details p {
+  font-size: 14px;
+  margin: 4px 0;
+  /* margin-top: 30px; */
+}
+
+/* Optional: Add hover effect for job cards */
+.job-card:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease-in-out;
+}
+a{
+  text-decoration: none;
+  color:black
+}
+
+.job-card1 {
+  display: flex;
+  width: 1000px;
+  height:40%;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.job-card1 img {
+  max-width: 250px;
+  border: #ccc;
+  margin-right: 16px;
+  border-radius: 4px;
+}
+
+.apply-btn{
+  width: 150px;
+}
+.apply-btn:hover {
+  background-color: black;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.application-form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #db6fcd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.application-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  width: 90%;
+}
+
+input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+/* Style for custom file input button */
+.file-input-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.file-input-label:hover {
+  background-color: #0056b3;
+}
+
+/* Style for submit button */
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
 }
