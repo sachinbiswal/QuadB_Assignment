@@ -1,5 +1,5 @@
 # Job Search Application
-
+# Note : You have to signup before login 
 ## Description
 
 The Job Search Application is a web application that allows users to search for job listings based on programming languages and apply for jobs.
