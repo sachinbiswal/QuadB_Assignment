@@ -48,18 +48,20 @@ To run this project, you need to have the following software installed on your s
 
    ```bash
    git clone https://github.com/your-username/job-search-app.git
+   ```
+
 Navigate to the project directory:
 
    ```bash
 
       cd job-search-app
-
+```
 Install project dependencies:
 
     ```bash
 
     npm install
-
+```
 Usage
 
     Start the development server:
@@ -67,7 +69,7 @@ Usage
     ```bash
 
     npm start
-
+```
     Open your web browser and access the application at http://localhost:3000.
 
     Use the application to search for job listings, view job details, and submit job applications.
